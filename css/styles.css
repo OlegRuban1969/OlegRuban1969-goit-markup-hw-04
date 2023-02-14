@@ -15,6 +15,7 @@
     --clr-header-h-f: #404BBF;
     --filters-btn-base: #F4F4FD;
     --filters-btn-border: #E7E9FC;
+    --border-customer: #8E8F99;
 }
 html {
     box-sizing: border-box;
@@ -271,11 +272,43 @@ address {
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
 }
+/* Секция 4 Customers */
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;  
+}
+.cust-name {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--clr-txt-sec-title);
+}
+.cust-ul {
+    display: flex;
+}
+.cust-list {
+    margin-right: 24px;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--border-customer);
+    border-radius: 4px;
+}
+.cust-list:nth-child(6) {
+    margin-right: 0;
+}
+
 /* ФУТЕР */
 .basement {
     background-color: var(--clr-base-hero-ftr);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.container-ftr {
+    display: flex;
 }
 .text-footer {
     margin-top: 16px;
@@ -295,6 +328,18 @@ address {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--text-logo-base-btn-hero);
+}
+.footer-second {
+    margin-left: 120px;
+}
+.text-media {
+    padding-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    color: var(--clr-base);
 }
 /* ПОРТФОЛІО */
 /* Filters */
