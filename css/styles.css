@@ -333,13 +333,26 @@ address {
     margin-left: 120px;
 }
 .text-media {
-    padding-top: 0;
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--clr-base);
+}
+.media-ul {
+    display: flex;
+}
+.media-list {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.media-list:nth-child(64) {
+    margin-right: 0;
 }
 
 /* ПОРТФОЛІО */
