@@ -291,6 +291,9 @@ address {
     display: flex;
 }
 .cust-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 24px;
     width: 168px;
     height: 88px;
@@ -345,6 +348,9 @@ address {
     display: flex;
 }
 .media-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 16px;
     width: 40px;
     height: 40px;
