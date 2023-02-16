@@ -16,9 +16,15 @@
     --filters-btn-base: #F4F4FD;
     --filters-btn-border: #E7E9FC;
     --border-customer: #8E8F99;
+    --border-features: #F4F4FD;
+    --border-card: #F4F4FD;
+    --succsess-green: #31D0AA;
+    --success-customer: #404BBF;
+    --success-team: #404BBF;
+    --back-team-social: #4D5AE5;
 }
 html {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 *,
 *::before,
@@ -138,10 +144,18 @@ address {
 }
 /* Герой */
 .hero {
-    background-color: var(--clr-base-hero-ftr);
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title {
     margin: 0 auto 48px;
@@ -202,6 +216,16 @@ address {
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
 }
+.feature-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    background-color: var(--border-features   );
+}
+
 /* Секция 2 Working */
 .work {
     padding-bottom: 120px;
@@ -239,6 +263,10 @@ address {
     margin-right: 24px;
     flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: var(--clr-base);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-list:nth-child(4) {
     margin-right: 0;
@@ -246,7 +274,7 @@ address {
 .team-card-prof {
     display: block;
     text-align: center;
-    padding: 32px 16px;
+    padding: 32px 16px 0 16px;
 }
 .team-name {
     margin-bottom: 72px;
@@ -267,10 +295,45 @@ address {
     color: var(--clr-txt-sec-title);
 }
 .team-list-text {
+    margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
+}
+.team-social {
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+.team-scl-ul {
+    display: flex;
+}
+.team-scl-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--back-team-social);
+    border-radius: 50%;
+}
+.team-scl-list:nth-child(4) {
+    margin-right: 0;
+}
+.team-scl-list:hover,
+.team-scl-list:focus {
+    background-color: var(--success-team);
+}
+.team-scl-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-scl-icon {
+    fill: var(--clr-base);
 }
 /* Секция 4 Customers */
 .customers {
@@ -291,19 +354,31 @@ address {
     display: flex;
 }
 .cust-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 24px;
     width: 168px;
     height: 88px;
-    border: 1px solid var(--border-customer);
-    border-radius: 4px;
 }
 .cust-list:nth-child(6) {
     margin-right: 0;
 }
-
+.cust-icon {
+    fill: currentColor;
+}
+.cust-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-customer);
+    color: var(--border-customer);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cust-link:hover,
+.cust-link:focus {
+    color: var(--success-customer);
+    border-color: var(--success-customer);
+}
 /* ФУТЕР */
 .basement {
     background-color: var(--clr-base-hero-ftr);
@@ -357,10 +432,21 @@ address {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
-.media-list:nth-child(64) {
+.media-list:nth-child(4) {
     margin-right: 0;
 }
-
+.media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-list:hover,
+.media-list:focus {
+    background-color: var(--succsess-green);
+}
+.media-icon {
+    fill: var(--clr-base);
+}
 /* ПОРТФОЛІО */
 /* Filters */
 .filters-cards {
@@ -411,6 +497,12 @@ address {
 .card {
     margin-right: 24px;
     margin-bottom: 48px;
+}
+.card:hover, .card:focus {
+    border: 1px solid var(--border-card);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .cards-item {
     text-decoration: none;
