@@ -275,6 +275,7 @@ address {
 .team-card-prof {
     display: block;
     text-align: center;
+    padding: 32px 16px 32px 16px;
 }
 .team-name {
     margin-bottom: 72px;
@@ -287,7 +288,6 @@ address {
     color: var(--clr-txt-sec-title);
 }
 .team-list-title {
-    margin-top: 32px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -304,14 +304,12 @@ address {
 }
 .team-scl-ul {
     display: flex;
-    padding-left: 16px;
 }
 .team-scl-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 24px;
-    padding-bottom: 32px;
 }
 .team-scl-list:nth-child(4) {
     margin-right: 0;
